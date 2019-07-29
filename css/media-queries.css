@@ -36,5 +36,74 @@ nav ul li {
 
 }
 
+  /*desktop--------------------------------------------------------------------*/
+  @media screen and (min-width:960px) and (max-width: 1200px) {
 
+      body{
+          display: grid;
+          grid-template-rows: 1fr 40% 30% 1fr;
+          grid-template-columns: 33% 33% 33%;
+          grid-template-areas: "h1 h1 topright";
+                               "img img img ";
+                              "main main subsection";
+                              "footer footer footer" ;
+          min-height: 100vh;
+
+      }
+
+
+
+    .header-img{
+        width: 890px;
+        height: 385px;
+    }
+    .alert-info {
+       display: none;
+
+
+    }
+    .alert-info a {
+        list-style: none;
+        text-decoration: none;
+
+    }
+
+    h1 {
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        padding-top: 25px;
+        grid-area: h1;
+
+    }
+
+    .nav-links  {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        justify-content: flex-end;
+        align-items: ;
+        grid-area: topright;
+
+    }
+.nav-links li a{
+    padding-left: 15px;
+
+}
+.header-img{
+    grid-area: img;
+}
+.main{
+    grid-area: main;
+}
+.sub-section{
+    grid-area: subsection;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+}
 
