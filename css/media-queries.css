@@ -1,0 +1,33 @@
+body{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 20% 40% 30%  10%;
+    grid-template-areas: "header nav";
+                         "img img";
+                        "main section";
+                       "footer footer ";
+
+
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+.header-img{
+    grid-area: img;
+}
+.main{
+    grid-area: main;
+}
+
+.sub-section{
+    grid-area: sub-section;
+}
+
+footer{
+    grid-area: footer;
+}
